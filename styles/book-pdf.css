@@ -1,0 +1,98 @@
+@page {
+  size: a4 portrait;
+  /* page-width: 595pt */
+  /* page-height: 842pt */
+  @frame  {           /* Static Frame */
+    left: 90pt; width: 415pt; top: 250pt; height: 442pt;
+    /* -pdf-frame-border: 1; */
+  }
+}
+
+@page toc_template {
+  size: a4 portrait;
+  /* page-width: 595pt */
+  /* page-height: 842pt */
+  @frame  {           /* Static Frame */
+    left: 50pt; width: 495pt; top: 70pt; height: 702pt;
+    /* -pdf-frame-border: 1; */
+  }
+}
+
+@page regular_template {
+  size: a4 portrait;
+  @frame header_frame {           /* Static Frame */
+      -pdf-frame-content: header_content;
+      left: 50pt; width: 512pt; top: 40pt; height: 30pt;
+      /* -pdf-frame-border: 1; */
+  }
+  @frame content_frame {          /* Content Frame */
+      left: 50pt; width: 512pt; top: 90pt; height: 692pt;
+  }
+  @frame footer_frame {           /* Another static Frame */
+      -pdf-frame-content: footer_content;
+      left: 50pt; width: 512pt; top: 792pt; height: 40pt;
+  }
+}
+
+#header_content {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: darkgray;
+  font-size: 80%;
+  font-style: italic;
+}
+
+#header_content hr {
+  margin-top: 0px;
+  color: #666;
+}
+
+#footer_content {
+  margin-top: 0;
+  padding-top: 0;
+  color: darkgray;
+  font-size: 80%;
+  font-style: italic;
+}
+
+#footer_content hr {
+  margin-bottom: 5px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer_copyright {
+  flex: 1;
+}
+.footer_page_number {
+  text-align: right;
+}
+
+#page_title {
+  text-align: center;
+  font-size: 32pt;
+  font-weight: bold;
+}
+
+#toc {
+  font-size: 20pt;
+  margin-bottom: 2em;
+}
+
+pdftoc {
+  color: #666;
+}
+pdftoc.pdftoclevel0 {
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+pdftoc.pdftoclevel1 {
+  margin-left: 1em;
+}
+pdftoc.pdftoclevel2 {
+  margin-left: 2em;
+  font-style: italic;
+}

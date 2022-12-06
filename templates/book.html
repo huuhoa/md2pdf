@@ -1,0 +1,44 @@
+<html>
+<head>
+  <link href="styles/highlight.css" rel="stylesheet">
+  <link href="styles/book-pdf.css" rel="stylesheet">
+</head>
+<body style="font-size: 14pt">
+  
+  <div id="page_title">{{ metadata.get('title') }}</div>
+  <p style="align-content: center;">{{ metadata.get('subtitle')}}</p>
+  
+  <pdf:nextpage name="toc_template" />
+  <div>
+    <div id="toc">Table of Contents</div>
+    <pdf:toc />
+  </div>
+  
+  <pdf:nextpage name="regular_template" />
+
+  <!-- Content for Static Frame 'header_frame' -->
+  <div id="header_content">{{ metadata.get('title') }}
+    <hr color="#666" />
+  </div>
+
+  <!-- Content for Static Frame 'footer_frame' -->
+  <div id="footer_content"><hr color="#666" />
+    <table id="footer">
+      <tr>
+        <td>
+          <div class="footer_copyright">(c) {{ metadata.get('author') }} </div>
+        </td>
+        <td>
+          <div class="footer_page_number"><pdf:pagenumber />
+            of <pdf:pagecount />
+          </div>
+        </td>
+      </tr>
+    </table>
+    </div>
+  <!-- switch page templates -->
+  <pdf:nexttemplate name="regular_template" />
+  {{ html_content }}
+</body>
+</html>
+
