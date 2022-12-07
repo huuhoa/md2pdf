@@ -3,14 +3,14 @@
   <link href="{{ metadata.get('STATIC_URL') }}/styles/highlight.css" rel="stylesheet">
   <link href="{{ metadata.get('STATIC_URL') }}/styles/book-pdf.css" rel="stylesheet">
 </head>
-<body style="font-size: 14pt">
+<body>
   
   <div id="page_title">{{ metadata.get('title') }}</div>
   <p style="align-content: center;">{{ metadata.get('subtitle')}}</p>
   
   <pdf:nextpage name="toc_template" />
   <div>
-    <div id="toc">Table of Contents</div>
+    <div id="toc-title">Table of Contents</div>
     <pdf:toc />
   </div>
   

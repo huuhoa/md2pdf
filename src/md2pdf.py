@@ -1,12 +1,13 @@
 """
 md2pdf: render markdown file to pdf
 """
-import markdown
-import frontmatter # https://pypi.org/project/python-frontmatter/
-import jinja2
-from pathlib import Path
 import argparse
 from io import StringIO
+from pathlib import Path
+
+import frontmatter  # https://pypi.org/project/python-frontmatter/
+import jinja2
+import markdown
 import xhtml2pdf.pisa as pisa
 
 
