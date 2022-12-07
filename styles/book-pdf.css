@@ -3,8 +3,12 @@
   /* 210 x 297 mm */
   /* page-width: 595pt */
   /* page-height: 842pt */
-  @frame  {           /* Static Frame */
-    left: 30mm; width: 150mm; top: 100mm; height: 140mm;
+  @frame {
+    /* Static Frame */
+    left: 30mm;
+    width: 150mm;
+    top: 100mm;
+    height: 140mm;
     /* -pdf-frame-border: 1; */
   }
 }
@@ -13,25 +17,41 @@
   size: a4 portrait;
   /* page-width: 595pt */
   /* page-height: 842pt */
-  @frame  {           /* Static Frame */
-    left: 25mm; width: 160mm; top: 70pt; height: 702pt;
+  @frame {
+    /* Static Frame */
+    left: 25mm;
+    width: 160mm;
+    top: 70pt;
+    height: 702pt;
     /* -pdf-frame-border: 1; */
   }
 }
 
 @page regular_template {
   size: a4 portrait;
-  @frame header_frame {           /* Static Frame */
-      -pdf-frame-content: header_content;
-      left: 20mm; width: 175mm; top: 40pt; height: 30pt;
-      /* -pdf-frame-border: 1; */
+  @frame header_frame {
+    /* Static Frame */
+    -pdf-frame-content: header_content;
+    left: 20mm;
+    width: 175mm;
+    top: 40pt;
+    height: 30pt;
+    /* -pdf-frame-border: 1; */
   }
-  @frame content_frame {          /* Content Frame */
-      left: 20mm; width: 175mm; top: 90pt; height: 692pt;
+  @frame content_frame {
+    /* Content Frame */
+    left: 20mm;
+    width: 175mm;
+    top: 90pt;
+    height: 692pt;
   }
-  @frame footer_frame {           /* Another static Frame */
-      -pdf-frame-content: footer_content;
-      left: 20mm; width: 175mm; top: 792pt; height: 40pt;
+  @frame footer_frame {
+    /* Another static Frame */
+    -pdf-frame-content: footer_content;
+    left: 20mm;
+    width: 175mm;
+    top: 792pt;
+    height: 40pt;
   }
 }
 
@@ -117,7 +137,7 @@ pre {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 20px;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 }
 
 pre code {
@@ -127,7 +147,7 @@ pre code {
 
 code {
   font-size: 15pt;
-  color: #A5215D;
+  color: #a5215d;
 }
 
 blockquote {
@@ -144,20 +164,14 @@ blockquote p {
 }
 
 blockquote.quote {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
   font-style: italic;
 }
 
 blockquote.notice {
   background-color: #f0f5ff;
   border-left: solid 5px #5b87dd;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 
 blockquote.notice strong {
@@ -167,10 +181,7 @@ blockquote.notice strong {
 blockquote.warning {
   background-color: #ffeced;
   border-left: solid 5px #dd787d;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 
 blockquote.warning strong {
