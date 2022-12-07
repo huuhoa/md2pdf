@@ -1,12 +1,19 @@
 """
 md2pdf: render markdown file to pdf
 """
+import markdown
+import frontmatter # https://pypi.org/project/python-frontmatter/
+import jinja2
+from pathlib import Path
+import argparse
+from io import StringIO
+import xhtml2pdf.pisa as pisa
+
 
 def markdown_to_html(content: str) -> str:
 	"""
 	transform markdown to html
 	"""
-	import markdown
 	parser = markdown.Markdown(extensions=['codehilite', 'fenced_code', 'toc'])
 	return parser.convert(content)
 
@@ -18,9 +25,6 @@ def markdown_preprocessing(src) -> dict:
 	Extract the Front Matter header to save into metadata key
 	Remaining content is in the markdown_content key
 	"""
-
-	import frontmatter # https://pypi.org/project/python-frontmatter/
-	from pathlib import Path
 
 	file_parts = frontmatter.load(src)
 	p = Path(__file__).parent.parent
@@ -36,8 +40,6 @@ def html_transform(data_dict: dict, layout_template: str) -> str:
 	"""
 	Render data with jinja2 template
 	"""
-	import jinja2
-	from pathlib import Path
 	p = Path(__file__).parent.parent / 'templates'
 	env = jinja2.Environment(loader=jinja2.FileSystemLoader(p))
 	tmpl = env.get_template(layout_template)
@@ -46,9 +48,6 @@ def html_transform(data_dict: dict, layout_template: str) -> str:
 
 
 def pdf_render(html, dest_file, metadata):
-	from io import StringIO
-	import xhtml2pdf.pisa as pisa
-
 	# Shortcut for dumping all logs to the screen
 	pisa.showLogging()
 	with open(dest_file, 'wb') as pdf_file:
@@ -63,8 +62,6 @@ def pdf_render(html, dest_file, metadata):
 
 
 def main():
-	import argparse
-
 	parser = argparse.ArgumentParser("md2pdf", description='Build PDF eBook from markdown files')
 	parser.add_argument('--input', '-i', type=str, help='Markdown input')
 	parser.add_argument('--output', '-o', type=str, help='PDF eBook output')
