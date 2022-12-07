@@ -218,3 +218,7 @@ h3 {
   padding-top: 5px;
   padding-bottom: 0;
 }
+
+p {
+  text-align: justify;
+}
