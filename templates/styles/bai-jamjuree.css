@@ -1,0 +1,94 @@
+/* bai-jamjuree-200-normal*/
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: url('./fonts/Bai_Jamjuree/BaiJamjuree-ExtraLight.ttf') format('truetype');  
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 200;
+  src: url('./fonts/Bai_Jamjuree/BaiJamjuree-ExtraLightItalic.ttf') format('truetype');  
+}
+
+/* bai-jamjuree-300-normal*/
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('./fonts/Bai_Jamjuree/BaiJamjuree-Light.ttf') format('truetype');  
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 300;
+  src: url('./fonts/Bai_Jamjuree/BaiJamjuree-LightItalic.ttf') format('truetype');  
+}
+
+/* bai-jamjuree-400-normal*/
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('./fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf') format('truetype');    
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url('./fonts/Bai_Jamjuree/BaiJamjuree-Italic.ttf') format('truetype');    
+}
+
+/* bai-jamjuree-500-normal*/
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url('./fonts/Bai_Jamjuree/BaiJamjuree-Medium.ttf') format('truetype');  
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 500;
+  src: url('./fonts/Bai_Jamjuree/BaiJamjuree-MediumItalic.ttf') format('truetype');  
+}
+
+/* bai-jamjuree-600-normal*/
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url('./fonts/Bai_Jamjuree/BaiJamjuree-SemiBold.ttf') format('truetype');  
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 600;
+  src: url('./fonts/Bai_Jamjuree/BaiJamjuree-SemiBoldItalic.ttf') format('truetype');  
+}
+
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('./fonts/Bai_Jamjuree/BaiJamjuree-Bold.ttf') format('truetype');    
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src: url('./fonts/Bai_Jamjuree/BaiJamjuree-BoldItalic.ttf') format('truetype');    
+}
