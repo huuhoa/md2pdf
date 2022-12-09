@@ -28,7 +28,7 @@ def markdown_preprocessing(src) -> dict:
 	"""
 
 	file_parts = frontmatter.load(src)
-	p = Path(__file__).parent.parent
+	p = Path(__file__).parent.parent / 'templates'
 	file_parts.metadata['STATIC_URL'] = f'{p}'
 
 	return {
