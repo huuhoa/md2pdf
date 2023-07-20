@@ -1,5 +1,5 @@
 Jinja2==3.1.2
 Markdown==3.4.1
-Pygments==2.13.0
+Pygments==2.15.0
 python-frontmatter==1.0.0
 -e git+https://github.com/xhtml2pdf/xhtml2pdf.git@cabe0fb79cccb5e176c09bb880791b3c76475064#egg=xhtml2pdf
